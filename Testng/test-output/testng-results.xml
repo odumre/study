@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-23T13:22:29 CST" name="Default suite" finished-at="2021-11-23T13:22:39 CST" duration-ms="10113">
+    <groups>
+    </groups>
+    <test started-at="2021-11-23T13:22:29 CST" name="Default test" finished-at="2021-11-23T13:22:39 CST" duration-ms="10113">
+      <class name="testng.Hi">
+        <test-method signature="testdemo()[pri:0, instance:testng.Hi@48fa0f47]" started-at="2021-11-23T13:22:29 CST" name="testdemo" finished-at="2021-11-23T13:22:35 CST" duration-ms="6085" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at testng.Demo.setUp(Demo.java:17)
+at testng.Hi.testdemo(Hi.java:10)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdemo -->
+      </class> <!-- testng.Hi -->
+      <class name="testng.Demo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.Demo@60d8c9b7]" started-at="2021-11-23T13:22:35 CST" name="setUp" finished-at="2021-11-23T13:22:39 CST" duration-ms="3907" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at testng.Demo.setUp(Demo.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNg()[pri:0, instance:testng.Demo@60d8c9b7]" started-at="2021-11-23T13:22:39 CST" name="testNg" finished-at="2021-11-23T13:22:39 CST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of MSEdgeDriver only supports MSEdge version 94
+Current browser version is 96.0.1054.29 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'YADAV', ip: '10.0.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707DB852+92978]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770414A13+968451]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043ED50+1141312]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77043996A+1119834]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770434846+1099062]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046F91B+1340939]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF77046AA9F+1320847]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770440B6F+1149023]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF770441C6F+1153375]
+Ordinal0 [0x00007FF770246BE1+93153]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051C466+7238]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7706E8F69+4121]
+Microsoft::Applications::Events::EventProperty::operator== [0x00007FF77051DFE9+14281]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA848+37336]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA3C4+36180]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7707BA216+35750]
+Microsoft::Applications::Events::GUID_t::GUID_t [0x00007FF7707A9BCC+65692]
+BaseThreadInitThunk [0x00007FF896767034+20]
+RtlUserThreadStart [0x00007FF897222651+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at testng.Demo.setUp(Demo.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNg -->
+      </class> <!-- testng.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
