@@ -21,6 +21,7 @@ static WebDriver driver;
 	driver.manage().deleteAllCookies();
 	driver.get("https://www.facebook.com");
 	String pageTitle = driver.getTitle();
+		System.out.println("hello");
 	Assert.assertEquals(pageTitle, "facebook");
 	
 
